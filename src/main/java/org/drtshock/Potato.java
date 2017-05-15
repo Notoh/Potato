@@ -135,8 +135,7 @@ public class Potato implements Tuber {
     
     public boolean makeFrenchFry() {
         if(this.isCooked()) {
-            this.isFrenchFry = true;
-            return true;
+            return (this.isFrenchFry = true);
         }
         return false;
     }
