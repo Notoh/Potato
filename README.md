@@ -17,16 +17,5 @@ A lack of equal rights for potatoes led to a disease spreading between them and 
 
 You too can continue this tradition of forking potatoes in the modern age by clicking the button above labeled "fork."
 
-Pull Requests
--------------
-
-If you have forked the potato and are looking to submit a pull request, please adhere to the following rules.
-
-- Our potato is lightweight, and it doesn't need non-potato-related items.
-- If you are adding code to the potato, please follow the lightweight mantra (no * imports, etc.).
-- Make sure that your code compiles and runs, if you are changing code.
-- Please format your code.
-- Our potato is a mainstream potato; it doesn't enjoy being full of obscure code/references (not a hipster potato).
-- Please "mash your potatoes" (squash your PRs with interactive rebase).
-- If a comment inquiring for more information is made on your PR, a reply is expected within a week. The request will be closed if not.
-- To stress: **no non-potato-related items**.
+#My Take
+I personally dislike potatoes unless they are either covered in barbecue sauce or are french fries, so I added this in my fork of the potato. 
