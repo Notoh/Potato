@@ -43,6 +43,7 @@ public class Potato implements Tuber {
         this.addCondiments("sour cream", "chives", "butter", "crumbled bacon", "grated cheese", "ketchup", "pepper",
                 "salt", "tabasco", "tomatoes","barbecue sauce");
         this.listCondiments();
+        this.makeFrenchFry();
         if (!this.isDelicious()) throw new NotDeliciousException(NotDeliciousReason.NOT_A_FRENCH_FRY);
     }
 
@@ -132,15 +133,22 @@ public class Potato implements Tuber {
         }
         return true;
     }
-    
+    /**
+    * Makes the potato into a french fry.
+    * @return true if the potato is a french fry.
+    */
     public boolean makeFrenchFry() {
         if(this.isCooked()) {
             return (this.isFrenchFry = true);
         }
         return false;
     }
-
-    public boolean isFrenchFry() throws BurntException {
+   /**
+    * Checks if the potato is a french fry, if it isn't, then it tries to make it once.
+    * 
+    * @return true if the potato is a french fry at the end of the process
+    */
+    public boolean isFrenchFry() {
         if(this.isFrenchFry) {
             return true;
         }
