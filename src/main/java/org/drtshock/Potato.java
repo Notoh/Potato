@@ -43,7 +43,7 @@ public class Potato implements Tuber {
         this.addCondiments("sour cream", "chives", "butter", "crumbled bacon", "grated cheese", "ketchup", "pepper",
                 "salt", "tabasco", "tomatoes");
         this.listCondiments();
-        if (!this.isDelicious()) throw new NotDeliciousException(NotDeliciousReason.NOT_BAKED);
+        if (!this.isDelicious()) throw new NotDeliciousException(NotDeliciousReason.NOT_A_FRENCH_FRY);
     }
 
     /**
@@ -133,7 +133,7 @@ public class Potato implements Tuber {
         return true;
     }
     
-    public boolean makeFrencyFry() {
+    public boolean makeFrenchFry() {
         if(this.isCooked()) {
             this.isFrenchFry = true;
             return true;
