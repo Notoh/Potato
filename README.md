@@ -17,5 +17,5 @@ A lack of equal rights for potatoes led to a disease spreading between them and 
 
 You too can continue this tradition of forking potatoes in the modern age by clicking the button above labeled "fork."
 
-#My Take
+# My Take
 I personally dislike potatoes unless they are either covered in barbecue sauce or are french fries, so I added this in my fork of the potato. 
