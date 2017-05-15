@@ -12,12 +12,13 @@ import java.util.List;
 public class Potato implements Tuber {
 
     private final List<Condiment> condiments = new ArrayList<>();
-
+    private boolean isFrenchFry;
+    
     public static void main(String[] args) {
         final Potato potato = new Potato();
         try {
             potato.prepare();
-            System.out.println("Of course Potato is prepared and delicious.");
+            System.out.println("Of course Potato is prepared and delicious as a french fry.");
         } catch (NotDeliciousException e) {
             System.err.println("Fatal error! How could Potato not be delicious?");
         }
@@ -131,7 +132,22 @@ public class Potato implements Tuber {
         }
         return true;
     }
+    
+    public boolean makeFrencyFry() {
+        if(this.isCooked()) {
+            this.isFrenchFry = true;
+            return true;
+        }
+        return false;
+    }
 
+    public boolean isFrenchFry() throws BurntException {
+        if(this.isFrenchFry) {
+            return true;
+        }
+        return makeFrenchFry();
+    }
+    
     /**
      * Checks if this potato is delicious. Returns the result of {@link #isBaked()}.
      *
@@ -139,7 +155,7 @@ public class Potato implements Tuber {
      */
     @Override
     public boolean isDelicious() {
-        return this.isBaked() || this.isCooked();
+        return !this.isBaked() && !this.isCooked() && this.isFrenchFry();
     }
 
     /**
